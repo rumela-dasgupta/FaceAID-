@@ -8,7 +8,7 @@
 
 -  Register a visitor with ID, contact, physical, and medical details
 -  Capture visitor images via webcam
--  Face recognition using DeepFace (VGG-Face under the hood)
+-  Face recognition using DeepFace
 -  Visitor data stored using `pickle` in `visitor_data.dat`
 -  Simple session-based profile rendering
 -  Training and recognition logic modularized into `face_module.py`
@@ -62,8 +62,8 @@ faceaid/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/faceAID-.git
-cd faceAID-
+git clone https://github.com/yourusername/FaceAID-.git
+cd FaceAID-
 ```
 ### Install Dependencies
 
