@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visitor Profile - FACEAID+</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="profile-container">
+    <h1>Welcome, {{ data.get('Name', 'Visitor') }}</h1>
+
+    <div class="profile-item"><label>Visitor ID:</label> {{ data.get('Visitor_id', 'N/A') }}</div>
+    <div class="profile-item"><label>Contact:</label> {{ data.get('Contact', 'N/A') }}</div>
+    <div class="profile-item"><label>Height:</label> {{ data.get('Height', 'N/A') }} cm</div>
+    <div class="profile-item"><label>Weight:</label> {{ data.get('Weight', 'N/A') }} kg</div>
+    <div class="profile-item"><label>Medical History:</label> {{ data.get('Medical_History', 'None') }}</div>
+    <div class="profile-item"><label>Last Visit:</label> {{ data.get('Last_visit', 'First Time') }}</div>
+
+    <!-- Centered & Styled Home Link -->
+    <div class="button-container">
+      <a href="/" class="home-link">Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>

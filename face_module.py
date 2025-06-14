@@ -60,14 +60,16 @@ def recognize_visitor():
                         if result['distance'] < 0.3:
                             recognized = True
                             return {
-                                "Status": "Known",
-                                "Name": v[0],
-                                "Contact": v[1],
-                                "Last_visit": v[2],
-                                "Height": v[3],
-                                "Weight" : v[4],
-                                "Medical_History" : v[5]
-                            }
+                                   "Status": "Known",
+                                    "Visitor_id": k,
+                                    "Name": v[0],
+                                    "Contact": v[1],
+                                    "Height": v[2],
+                                    "Weight": v[3],
+                                    "Medical_History": v[4],
+                                    "Last_visit": v[5]
+}
+
         except EOFError:
                f.close()
         return {"status": "new"}

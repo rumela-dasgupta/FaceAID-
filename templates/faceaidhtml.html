@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FACEAID+ Portal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Panel -->
+    <div class="left-panel">
+      <div class="overlay"></div>
+      <div class="brand-wrapper">
+        <i class="fas fa-prescription-bottle-medical"></i>
+        <h1>FACEAID+</h1>
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+      <div class="minimal-login">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.dNuRiMJDXYEmWCp2u9uA0QHaDb&pid=Api&P=0&h=180" alt="medical svg" class="illustration" />
+        <h2>Medicine made accessible to all</h2>
+
+        <form action="/recognize" method="POST">
+          <button class="login-btn" type="submit">Already Registered? Login</button>
+        </form>
+
+        <p style="margin: 10px 0; font-size: 14px;">or</p>
+
+        <form action="/register-form" method="GET">
+          <button class="login-btn" type="submit">New User? Register Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
