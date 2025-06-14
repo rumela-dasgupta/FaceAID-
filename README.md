@@ -62,8 +62,8 @@ faceaid/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/faceaid.git
-cd faceaid
+git clone https://github.com/yourusername/faceaid-.git
+cd faceaid-
 ```
 ### Install Dependencies
 
