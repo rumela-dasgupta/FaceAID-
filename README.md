@@ -75,3 +75,7 @@ python main.py
 ### Access in Browser
 http://127.0.0.1:5000
 
+### Notes
+-Press Q while webcam window is open to capture the image.
+-Ensure you have a working webcam.
+-visitor_data.dat must be present for recognition to work.
